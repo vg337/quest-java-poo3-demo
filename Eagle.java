@@ -42,7 +42,7 @@ public class Eagle extends Animal implements Fly {
     		System.out.println(this.getName + " is too high, it can't lands.");
     	}
     	else {
-    		System.out.println(this.getName +" is lands on the ground.");
+    		System.out.println(this.getName + " is lands on the ground.");
     	}
     }
 }
