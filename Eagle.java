@@ -20,29 +20,29 @@ public class Eagle extends Animal implements Fly {
 
     @Override
     public void takeOff() {
-        System.out.println("Eye Cherry takes off in the sky.");
+        System.out.println(this.getName + " takes off in the sky.");
     }
 
     @Override
     public int ascend(int meters) {
         this.setMeters(meters + this.getMeters());
-        System.out.println("Eye Cherry flies upward, altitude : " + this.getMeters());
+        System.out.println(this.getName + " flies upward, altitude : " + this.getMeters());
         return this.getMeters();
     }
     @Override
     public int descend(int meters) {
         this.setMeters(this.getMeters() - meters);
-        System.out.println("Eye Cherry flies downward, altitude : " + this.getMeters());
+        System.out.println(this.getName + " flies downward, altitude : " + this.getMeters());
         return this.getMeters();
     }
 
     @Override
     public void land() {
         if (this.getMeters() > 1) {
-    		System.out.println("Eye Cherry is too high, it can't lands.");
+    		System.out.println(this.getName + " is too high, it can't lands.");
     	}
     	else {
-    		System.out.println("Eye Cherry is lands on the ground.");
+    		System.out.println(this.getName + " is lands on the ground.");
     	}
     }
 }
